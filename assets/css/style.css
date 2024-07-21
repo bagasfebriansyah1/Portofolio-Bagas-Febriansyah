@@ -670,12 +670,12 @@ header .navbar ul li a:hover {
   flex-direction: column;
 }
 .work .box-container .box img {
-  height: 50%; /* Adjust as needed */
+  height: 50%; /* Adjust height as needed */
   width: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ensure the image covers the box without distortion */
 }
 .work .box-container .box .content {
-  height: 50%; /* Adjust as needed to fit within the box */
+  height: 50%; /* Adjust to fit the box */
   width: 100%;
   position: relative;
   background: rgba(255, 255, 255, 0.9);
