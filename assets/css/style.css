@@ -641,7 +641,7 @@ header .navbar ul li a:hover {
 
 /* work section starts */
 .work {
-  background: #002d72; /* Biru tua */
+  background:linear-gradient(to bottom, #57059e, #4a00e0);
   color: #ffffff; /* Warna teks putih untuk kontras */
   min-height: 80vh;
   padding: 4rem 0; /* Tambahkan padding untuk ruang ekstra */
