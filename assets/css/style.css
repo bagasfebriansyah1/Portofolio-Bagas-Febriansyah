@@ -1043,6 +1043,35 @@ header .navbar ul li a:hover {
     flex-wrap: wrap;
   }
 }
+/* Button styling */
+.btn-resume {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  color: #fff;
+  background-color: #007bff; /* Warna tombol */
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-resume:hover {
+  background-color: #0056b3; /* Warna tombol saat hover */
+  transform: scale(1.05);
+}
+
+.btn-resume i {
+  margin-left: 0.5rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  .achievement .box-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 /* achievement media queries ends*/
 /* achievement section ends */
 
