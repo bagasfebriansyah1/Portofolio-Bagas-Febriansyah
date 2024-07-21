@@ -939,6 +939,25 @@ header .navbar ul li a:hover {
 /* experience media queries ends */
 /* experience section ends */
 
+/* achievements section starts */
+.achievements {
+  background: linear-gradient(to bottom, #010136, #00003a);
+  color: #fff; /* Anda bisa mengatur warna teks sesuai kebutuhan */
+  padding: 2rem 9%;
+}
+
+.achievements h2 {
+  color: #fff;
+  padding: 1rem;
+}
+
+.achievements .heading span {
+  color: rgb(255, 230, 0);
+}
+
+/* Tambahkan lebih banyak gaya di sini sesuai dengan kebutuhan */
+
+
 /* contact section starts */
 .contact {
   background: #e5ecfb;
