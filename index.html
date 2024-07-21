@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Tambahkan EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <meta name="keywords" content="Bagas Febriansyah, portfolio, Bagas, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
     <meta name="description" content="Welcome to Bagas Febriansyah Portfolio. Full-Stack Web Developer and Android App Developer" />
     <!-- Custom CSS -->
@@ -350,7 +353,24 @@
   </div>
 </section>
 <!-- contact section ends -->
+<script>
+        // Inisialisasi EmailJS dengan User ID Anda
+        emailjs.init("4KK9eiiy1AC89QVZ3");
 
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Mencegah pengiriman form default
+
+            emailjs.sendForm('service_itqdr7g', 'template_68zhm9j', this)
+                .then(function(response) {
+                    console.log('Success:', response);
+                    alert('Your message has been sent successfully!');
+                    document.getElementById('contact-form').reset(); // Reset form setelah pengiriman
+                }, function(error) {
+                    console.log('Failed:', error);
+                    alert('Sorry, something went wrong. Please try again.');
+                });
+        });
+    </script>
 
 <!-- footer section starts -->
 <section class="footer">
