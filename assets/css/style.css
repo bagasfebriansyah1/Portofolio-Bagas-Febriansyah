@@ -939,24 +939,63 @@ header .navbar ul li a:hover {
 /* experience media queries ends */
 /* experience section ends */
 
-/* achievements section starts */
-.achievements {
-  background: linear-gradient(to bottom, #010136, #00003a);
-  color: #fff; /* Anda bisa mengatur warna teks sesuai kebutuhan */
-  padding: 2rem 9%;
+/* achievement section starts */
+.achievement {
+  background: #e5ecfb; /* Warna latar belakang yang sama dengan bagian education */
+  min-height: 80vh;
+  padding: 4rem 0; /* Padding atas dan bawah untuk ruang yang cukup */
 }
 
-.achievements h2 {
-  color: #fff;
-  padding: 1rem;
+.achievement .heading {
+  text-align: center;
+  color: #012970; /* Warna teks untuk heading */
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
-.achievements .heading span {
-  color: rgb(255, 230, 0);
+.achievement .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
-/* Tambahkan lebih banyak gaya di sini sesuai dengan kebutuhan */
+.achievement .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  background: #ffffff; /* Warna latar belakang kotak achievement */
+  padding: 2rem;
+  text-align: center;
+  transition: 0.3s;
+}
 
+.achievement .box-container .box:hover {
+  transform: scale(1.03);
+  box-shadow: 0.4rem 1rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+
+.achievement .box-container .box h3 {
+  font-size: 2rem;
+  color: #012970;
+}
+
+.achievement .box-container .box p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 600px) {
+  .achievement .box-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 
 /* contact section starts */
 .contact {
