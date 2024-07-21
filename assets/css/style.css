@@ -647,13 +647,18 @@ header .navbar ul li a:hover {
   padding: 4rem 0; /* Tambahkan padding untuk ruang ekstra */
 }
 
-.work .heading {
+/* Styling for heading */
+.heading {
   font-size: 2.5rem;
   text-align: center;
-  color: #000000;
+  color: #012970; /* Color for 'Projects' */
   margin-bottom: 2rem;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
+}
+
+.heading .highlight {
+  color: #FFD700; /* Yellow color */
 }
 
 .work .box-container {
