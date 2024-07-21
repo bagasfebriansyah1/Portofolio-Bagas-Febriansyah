@@ -1046,13 +1046,15 @@ header .navbar ul li a:hover {
 /* Button styling */
 .btn-resume {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem; /* Tambah padding untuk ukuran tombol lebih besar */
   margin-top: 1rem;
   color: #fff;
   background-color: #007bff; /* Warna tombol */
   text-decoration: none;
   border-radius: 0.25rem;
-  font-size: 1rem;
+  font-size: 1.2rem; /* Ukuran font lebih besar */
+  font-weight: bold; /* Teks tebal */
+  text-transform: uppercase; /* Menjadikan teks kapital */
   transition: background-color 0.3s, transform 0.3s;
 }
 
