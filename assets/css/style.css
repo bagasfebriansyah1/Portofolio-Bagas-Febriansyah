@@ -642,7 +642,7 @@ header .navbar ul li a:hover {
 /* work section starts */
 .work {
   background: #002d72; /* Biru tua */
-  color: #ffffff; /* Warna teks putih untuk kontras */
+  color: #000000; /* Warna teks putih untuk kontras */
   min-height: 80vh;
   padding: 4rem 0; /* Tambahkan padding untuk ruang ekstra */
 }
