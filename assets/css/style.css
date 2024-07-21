@@ -666,35 +666,35 @@ header .navbar ul li a:hover {
   height: 30rem;
   background: #fff;
   border: none;
+  display: flex;
+  flex-direction: column;
 }
 .work .box-container .box img {
-  height: 100%;
+  height: 50%; /* Adjust as needed */
   width: 100%;
   object-fit: cover;
 }
 .work .box-container .box .content {
-  height: 100%;
+  height: 50%; /* Adjust as needed to fit within the box */
   width: 100%;
-  position: absolute;
-  top: 85%;
-  left: 0;
+  position: relative;
   background: rgba(255, 255, 255, 0.9);
-  display: flex;
-  flex-direction: column;
-  padding: 2rem; /* Added padding for better text layout */
+  padding: 1rem;
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 .work .box-container .box .content h3 {
-  font-size: 2.5rem; /* Increase font size for project title */
-  text-align: center; /* Center align the title */
-  margin-bottom: 1rem; /* Space below the title */
+  font-size: 2rem; /* Adjust font size for project title */
+  text-align: center;
+  margin-bottom: 1rem;
 }
 .work .box-container .box .content p {
-  font-size: 1.6rem; /* Increase font size for description */
-  text-align: left; /* Left align the description */
-  line-height: 1.8; /* Improve readability */
+  font-size: 1.5rem; /* Adjust font size for description */
+  text-align: left;
+  line-height: 1.6; /* Improve readability */
+  max-height: 20rem; /* Adjust max height as needed */
 }
 .work .box-container .box:hover .content {
-  top: 25%;
+  top: 0; /* Ensure content is visible in hover state */
 }
 .work .desc {
   margin: 2rem;
