@@ -115,9 +115,34 @@
 <section class="skills" id="skills">
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
   <div class="container">
-    <div class="row" id="skillsContainer"></div>
+      <div class="row" id="skillsContainer"></div>
   </div>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      fetch("skills.json") // Ambil langsung tanpa folder tambahan
+          .then(response => response.json())
+          .then(data => {
+              const skillsContainer = document.getElementById("skillsContainer");
+              skillsContainer.innerHTML = ""; // Bersihkan sebelum mengisi ulang
+
+              data.forEach(skill => {
+                  const skillElement = `
+                      <div class="bar">
+                          <div class="info">
+                              <img src="${skill.icon}" alt="${skill.name}" />
+                              <span>${skill.name}</span>
+                          </div>
+                      </div>
+                  `;
+                  skillsContainer.innerHTML += skillElement;
+              });
+          })
+          .catch(error => console.error("Gagal mengambil data skills:", error));
+  });
+</script>
+
 
 
 <!-- education section starts -->
