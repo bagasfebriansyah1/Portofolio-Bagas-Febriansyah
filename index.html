@@ -113,6 +113,7 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    // Fetch data dari skills.json
     fetch("skills.json")
       .then(response => response.json())
       .then(data => {
@@ -130,8 +131,25 @@
         });
       })
       .catch(error => console.error("Gagal mengambil data skills:", error));
+
+    // Smooth Scroll untuk Navigasi Bar
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 70, // Sesuaikan agar tidak tertutup navbar
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
   });
-  </script>
+</script>
+
 
 
 <!-- education section starts -->
