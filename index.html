@@ -111,6 +111,15 @@
 </section>
 <!-- about section ends -->
 
+<!-- Skills Section -->
+<section class="skills" id="skills">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+  <div class="container">
+    <div class="row" id="skillsContainer"></div>
+  </div>
+</section>
+
+<!-- Script untuk Fetch Data & Smooth Scroll -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     // Fetch data dari skills.json
@@ -132,7 +141,7 @@
       })
       .catch(error => console.error("Gagal mengambil data skills:", error));
 
-    // Smooth Scroll untuk Navigasi Bar
+    // Smooth Scroll saat klik navbar
     document.querySelectorAll('.navbar a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -149,7 +158,6 @@
     });
   });
 </script>
-
 
 
 <!-- education section starts -->
