@@ -119,46 +119,6 @@
   </div>
 </section>
 
-<!-- Script untuk Fetch Data & Smooth Scroll -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Fetch data dari skills.json
-    fetch("skills.json")
-      .then(response => response.json())
-      .then(data => {
-        const skillsContainer = document.getElementById("skillsContainer");
-        data.forEach(skill => {
-          const skillElement = `
-            <div class="bar">
-              <div class="info">
-                <img src="${skill.icon}" alt="${skill.name}" />
-                <span>${skill.name}</span>
-              </div>
-            </div>
-          `;
-          skillsContainer.innerHTML += skillElement;
-        });
-      })
-      .catch(error => console.error("Gagal mengambil data skills:", error));
-
-    // Smooth Scroll saat klik navbar
-    document.querySelectorAll('.navbar a').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 70, // Sesuaikan agar tidak tertutup navbar
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-  });
-</script>
-
 
 <!-- education section starts -->
 <section class="education" id="education">
