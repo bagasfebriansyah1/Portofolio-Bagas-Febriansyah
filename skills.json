@@ -1,5 +1,17 @@
 [
     {
+        "name": "Zahir Accounting",
+        "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/48/000000/external-accounting-financial-analysis-flaticons-lineal-color-flat-icons.png"
+    },
+    {
+        "name": "Accurate Accounting",
+        "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/48/000000/external-accounting-financial-reporting-flaticons-lineal-color-flat-icons.png"
+    },
+    {
+        "name": "Coretax Indonesia",
+        "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/48/000000/external-tax-financial-reporting-flaticons-lineal-color-flat-icons.png"
+    },
+    {
         "name": "Android",
         "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
     },
