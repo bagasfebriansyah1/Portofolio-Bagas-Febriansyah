@@ -121,7 +121,7 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-      fetch("skills.html") // Ambil langsung tanpa folder tambahan
+      fetch("skills.json") // Ambil langsung tanpa folder tambahan
           .then(response => response.json())
           .then(data => {
               const skillsContainer = document.getElementById("skillsContainer");
