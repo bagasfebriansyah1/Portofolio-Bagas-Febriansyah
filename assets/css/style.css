@@ -1370,11 +1370,11 @@ form .button-area {
 
 .video-section {
   background-color: #f9f9f9;
-  padding: 50px 0 30px;
-  text-align: center;
+  padding: 50px 0;
 }
 
 .video-section .heading {
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -1382,30 +1382,23 @@ form .button-area {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
 }
 
 .video-container video {
   width: 100%;
   max-width: 900px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive untuk HP */
- @media (max-width: 768px) {
-    .video-section {
-      padding: 20px 10px !important;
+/* Media Query untuk HP */
+@media (max-width: 768px) {
+  .video-section {
+    padding: 30px 0;
   }
 
-  .video-section .heading {
-    margin-bottom: 20px;
-    font-size: 22px;
-  }
-
-  .video-container {
-    padding: 0 10px;
+  .video-container video {
+    max-width: 100%;
+    height: auto;
   }
 }
-
-/* scroll top ends */
