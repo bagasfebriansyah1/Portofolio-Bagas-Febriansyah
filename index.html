@@ -131,7 +131,7 @@
   </div>
 </section>
 <!-- Video Section Ends -->
- 
+
 <!-- Skills Section -->
 <section class="skills" id="skills">
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
@@ -140,30 +140,56 @@
   </div>
 </section>
 
+<!-- Tambahkan styling langsung di HTML -->
+<style>
+  @media (max-width: 768px) {
+    .video-section,
+    .skills {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+
+    .video-section .heading,
+    .skills .heading {
+      margin-bottom: 0px !important;
+      margin-top: 0px !important;
+    }
+
+    .video-container,
+    .skills .container {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+</style>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-      fetch("skills.json") // Ambil langsung tanpa folder tambahan
+      fetch("skills.json")
           .then(response => response.json())
           .then(data => {
               const skillsContainer = document.getElementById("skillsContainer");
-              skillsContainer.innerHTML = ""; // Bersihkan sebelum mengisi ulang
+              skillsContainer.innerHTML = "";
 
               data.forEach(skill => {
-                  const skillElement = `
+                  const skillElement = 
                       <div class="bar">
                           <div class="info">
                               <img src="${skill.icon}" alt="${skill.name}" />
                               <span>${skill.name}</span>
                           </div>
                       </div>
-                  `;
+                  ;
                   skillsContainer.innerHTML += skillElement;
               });
           })
           .catch(error => console.error("Gagal mengambil data skills:", error));
   });
 </script>
-
 
 
 <!-- education section starts -->
