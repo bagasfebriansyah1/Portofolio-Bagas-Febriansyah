@@ -16,11 +16,20 @@
 </head>
 <body oncontextmenu="return false">
 
-  <!-- Background Music -->
-<audio autoplay loop>
-    <source src="assets\Lagu%20Taylor%20Swift.mp3" type="audio/mp3">
+ <audio id="bg-music" autoplay loop muted>
+    <source src="assets/Lagu%20Taylor%20Swift.mp3" type="audio/mp3">
     Your browser does not support the audio element.
 </audio>
+
+<script>
+    // Contoh: aktifkan suara setelah klik pertama di mana pun
+    document.addEventListener('click', function () {
+        const audio = document.getElementById('bg-music');
+        audio.muted = false;
+        audio.play();
+    }, { once: true }); // hanya sekali klik
+</script>
+
 <!-- pre loader -->
 <!-- <div class="loader-container">
   <img draggable="false" src="./assets/images/preloader.gif" alt="">
