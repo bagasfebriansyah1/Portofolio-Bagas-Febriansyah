@@ -142,6 +142,15 @@
 
 <!-- Tambahkan styling langsung di HTML -->
 <style>
+  /* Aturan untuk laptop & desktop */
+  .video-container video {
+    width: 100%;
+    max-width: 800px; /* Ukuran sedang agar tidak terlalu kecil atau besar */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
   @media (max-width: 768px) {
     .video-section,
     .skills {
@@ -164,8 +173,13 @@
       padding-top: 0 !important;
       padding-bottom: 0 !important;
     }
+
+    .video-container video {
+      max-width: 100% !important; /* Agar pas di layar kecil */
+    }
   }
 </style>
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
