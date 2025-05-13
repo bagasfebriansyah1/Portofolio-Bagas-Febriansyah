@@ -119,7 +119,7 @@
 <!-- about section ends -->
 
 <!-- Video Section -->
-<section class="video-section" id="video-section">
+<section class="video-section" id="video-section" style="padding-bottom: 40px;">
   <h2 class="heading">
     🎥 My <span>Portfolio Video</span>
   </h2>
@@ -133,47 +133,31 @@
 <!-- Video Section Ends -->
 
 <!-- Skills Section -->
-<section class="skills" id="skills">
+<section class="skills" id="skills" style="padding-top: 40px;">
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
   <div class="container">
       <div class="row" id="skillsContainer"></div>
   </div>
 </section>
 
-<!-- Tambahkan styling langsung di HTML -->
 <style>
   @media (max-width: 768px) {
-    .video-section,
+    .video-section {
+      padding-bottom: 10px !important;
+    }
     .skills {
       padding-top: 10px !important;
-      padding-bottom: 10px !important;
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-    }
-
-    .video-section .heading,
-    .skills .heading {
-      margin-bottom: 10px !important;
-      margin-top: 10px !important;
-    }
-
-    .video-container,
-    .skills .container {
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-      padding-top: 0 !important;
-      padding-bottom: 0 !important;
     }
   }
 </style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-      fetch("skills.json")
+      fetch("skills.json") // Ambil langsung tanpa folder tambahan
           .then(response => response.json())
           .then(data => {
               const skillsContainer = document.getElementById("skillsContainer");
-              skillsContainer.innerHTML = "";
+              skillsContainer.innerHTML = ""; // Bersihkan sebelum mengisi ulang
 
               data.forEach(skill => {
                   const skillElement = `
@@ -191,6 +175,8 @@
   });
 </script>
 
+
+
 <!-- education section starts -->
 <section class="education" id="education">
 
@@ -207,7 +193,7 @@
         <div class="content">
         <h3>Undergraduate of Accounting in UIN Syarif Hidayatullah Jakarta</h3>
         <p>S1 Accounting | GPA 3.70/4.00</p>
-        <h4>2021 - 2025 | Completed</h4>
+        <h4>2021 - present | Pursuing</h4>
         </div>
     </div>
 
@@ -229,7 +215,7 @@
       <div class="content">
       <h3>Senior High School in MAS Manaratul Islam Jakarta</h3>
       <p>Majoring in Science and Sosial Science | GPA 90.61/100.00</p>
-      <h4>2018 - 2021 | Completed</h4>
+      <h4>2018-2021 | Completed</h4>
       </div>
     </div>
 
