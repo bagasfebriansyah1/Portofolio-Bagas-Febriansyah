@@ -119,7 +119,7 @@
 <!-- about section ends -->
 
 <!-- Video Section -->
-<section class="video-section" id="video-section">
+<section class="video-section" id="video-section" style="padding-bottom: 40px;">
   <h2 class="heading">
     🎥 My <span>Portfolio Video</span>
   </h2>
@@ -131,14 +131,25 @@
   </div>
 </section>
 <!-- Video Section Ends -->
- 
+
 <!-- Skills Section -->
-<section class="skills" id="skills">
+<section class="skills" id="skills" style="padding-top: 40px;">
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
   <div class="container">
       <div class="row" id="skillsContainer"></div>
   </div>
 </section>
+
+<style>
+  @media (max-width: 768px) {
+    .video-section {
+      padding-bottom: 10px !important;
+    }
+    .skills {
+      padding-top: 10px !important;
+    }
+  }
+</style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
