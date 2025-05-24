@@ -549,7 +549,7 @@
       if (entry.isIntersecting) {
         const direction = entry.boundingClientRect.top > window.innerHeight / 2 ? 'bottom' : 'top';
         entry.target.classList.add(`animate-from-${direction}`, 'visible');
-        observer.unobserve(entry.target); // kalau mau animasinya hanya muncul sekali
+       
       }
     });
   }, {
