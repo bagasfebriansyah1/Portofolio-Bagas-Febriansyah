@@ -935,6 +935,142 @@ header .navbar ul li a:hover {
 /* experience media queries ends */
 /* experience section ends */
 
+/* organization section starts */
+.organization .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.organization .timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background: #004080; /* garis timeline biru tua */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -2;
+}
+.organization .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+/* circles on timeline */
+.organization .container::after {
+  content: "\f0b1";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #e0f0ff; /* lingkaran bg biru muda */
+  border: 4px solid #004080; /* border biru tua */
+  top: 15px;
+  border-radius: 50%;
+  z-index: 100;
+  font-size: 1.89rem;
+  text-align: center;
+  font-weight: 600;
+  color: #004080; /* ikon biru tua */
+  font-family: "Font Awesome 5 Free";
+}
+.organization .left {
+  left: 0;
+}
+.organization .right {
+  left: 50%;
+}
+/* arrows pointing right */
+.organization .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #004080; /* arrow biru tua */
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #004080;
+}
+/* arrows pointing left  */
+.organization .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #004080; /* arrow biru tua */
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #004080 transparent transparent;
+}
+.organization .right::after {
+  left: -16px;
+}
+.organization .content {
+  background-color: #cce5ff; /* bg konten biru muda */
+  position: relative;
+  border-radius: 6px;
+}
+.organization .content .tag {
+  font-size: 1.3rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  color: #003366; /* warna teks tag biru tua */
+}
+.organization .content .desc {
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
+  color: #003366; /* warna teks deskripsi biru tua */
+}
+.organization .content .desc h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.organization .content .desc p {
+  font-size: 1.2rem;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .organization {
+    min-height: 80vh;
+  }
+  .organization .timeline {
+    margin-top: 2rem;
+  }
+  .organization .timeline::after {
+    left: 31px;
+  }
+  .organization .container {
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 2rem;
+  }
+  .organization .container::after {
+    font-size: 2.2rem;
+  }
+  .organization .container::before {
+    left: 61px;
+    border: medium solid #004080;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #004080 transparent transparent;
+  }
+  .organization .left::after {
+    left: 15px;
+  }
+  .organization .right::after {
+    left: 15px;
+  }
+  .organization .right {
+    left: 0%;
+  }
+}
+
 /* achievement section starts */
 .achievement {
   background: #e5ecfb;
