@@ -1101,7 +1101,6 @@ header .navbar ul li a:hover {
   transform: translateY(0);
 }
 
-/* Animasi muncul dari bawah */
 .organization .container.animate-from-bottom {
   opacity: 0;
   transform: translateY(50px);
@@ -1112,6 +1111,7 @@ header .navbar ul li a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 /* organization section ends */
 
