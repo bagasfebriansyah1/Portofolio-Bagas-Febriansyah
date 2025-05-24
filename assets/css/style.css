@@ -1104,6 +1104,55 @@ header .navbar ul li a:hover {
   }
 }
 /* organization media queries ends */
+/* Ganti ikon default dengan ikon sesuai organisasi menggunakan Font Awesome */
+.organization .container.youth-ranger::after {
+  content: "\f0c0"; /* users icon */
+}
+
+.organization .container.hellocation::after {
+  content: "\f108"; /* laptop icon */
+}
+
+.organization .container.superprof::after {
+  content: "\f19d"; /* graduation-cap icon */
+}
+
+.organization .container.teman-belajar::after {
+  content: "\f51c"; /* chalkboard-teacher icon */
+}
+
+.organization .container.universal-language::after {
+  content: "\f2bb"; /* id-badge icon */
+}
+
+.organization .container.dialogika::after {
+  content: "\f0eb"; /* lightbulb icon */
+}
+
+.organization .container.iac::after {
+  content: "\f1ad"; /* users-cog icon */
+}
+
+.organization .container.iyac::after {
+  content: "\f0f2"; /* bullhorn icon */
+}
+
+.organization .container.pemuda-gatra::after {
+  content: "\f500"; /* fist-raised icon */
+}
+
+.organization .container.syiar-islam::after {
+  content: "\f0a1"; /* bullhorn icon */
+}
+
+.organization .container.kopma::after {
+  content: "\f555"; /* handshake icon */
+}
+
+.organization .container.limateri::after {
+  content: "\f5da"; /* chalkboard icon */
+}
+
 /* organization section ends */
 
 
