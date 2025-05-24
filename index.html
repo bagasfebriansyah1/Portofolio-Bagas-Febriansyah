@@ -750,5 +750,25 @@
 
 <script src="./assets/js/script.js"></script>
 
+<script>
+  const containers = document.querySelectorAll('.organization .container');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const direction = entry.boundingClientRect.top > 0 ? 'top' : 'bottom';
+        entry.target.classList.add(`animate-from-${direction}`, 'visible');
+        observer.unobserve(entry.target); // agar animasi hanya terjadi sekali
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  containers.forEach(container => {
+    observer.observe(container);
+  });
+</script>
+
 </body>
 </html>
