@@ -541,6 +541,25 @@
 
 </section>
 <!-- organization & volunteer section ends -->
+<script>
+  const containers = document.querySelectorAll('.organization .container');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const direction = entry.boundingClientRect.top > window.innerHeight / 2 ? 'bottom' : 'top';
+        entry.target.classList.add(`animate-from-${direction}`, 'visible');
+        observer.unobserve(entry.target); // kalau mau animasinya hanya muncul sekali
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  containers.forEach(container => {
+    observer.observe(container);
+  });
+</script>
 
 
 <!-- Achievement section starts -->
@@ -749,26 +768,6 @@
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="./assets/js/script.js"></script>
-
-<script>
-  const containers = document.querySelectorAll('.organization .container');
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const direction = entry.boundingClientRect.top > 0 ? 'top' : 'bottom';
-        entry.target.classList.add(`animate-from-${direction}`, 'visible');
-        observer.unobserve(entry.target); // agar animasi hanya terjadi sekali
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-
-  containers.forEach(container => {
-    observer.observe(container);
-  });
-</script>
 
 </body>
 </html>
