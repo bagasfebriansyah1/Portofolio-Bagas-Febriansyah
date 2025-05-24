@@ -941,179 +941,172 @@ header .navbar ul li a:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .organization .timeline::after {
   content: "";
   position: absolute;
   width: 6px;
-  background: #004080; /* garis timeline biru tua */
+  background: #020133;
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
   z-index: -2;
 }
-
 .organization .container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
 }
-
+/*circles on timeline*/
 .organization .container::after {
-  content: "\f0c0"; /* ikon people FontAwesome */
+  content: "\f0b1";
   position: absolute;
   width: 25px;
   height: 25px;
-  background-color: #e0f0ff;
-  border: 4px solid #004080;
-  top: 15px;
   right: -17px;
+  background-color: rgb(255, 255, 255);
+  border: 4px solid #ff9f55;
+  top: 15px;
   border-radius: 50%;
   z-index: 100;
-  font-size: 1.6rem;
+  font-size: 1.89rem;
   text-align: center;
-  color: #004080;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  line-height: 1.2;
+  font-weight: 600;
+  color: #02094b;
+  font-family: "Font Awesome\ 5 Free";
 }
-
 .organization .left {
   left: 0;
 }
-
 .organization .right {
   left: 50%;
 }
-
-.organization .left::before,
-.organization .right::before {
-  content: "";
+/* arrows pointing right */
+.organization .left::before {
+  content: " ";
+  height: 0;
   position: absolute;
   top: 22px;
   width: 0;
-  height: 0;
   z-index: 1;
-  border-style: solid;
-}
-
-.organization .left::before {
   right: 30px;
+  border: medium solid #f68c09;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #004080;
+  border-color: transparent transparent transparent #f68c09;
 }
-
+/* arrows pointing left  */
 .organization .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
   left: 30px;
+  border: medium solid #f68c09;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #004080 transparent transparent;
+  border-color: transparent #f68c09 transparent transparent;
 }
-
 .organization .right::after {
   left: -16px;
 }
-
 .organization .content {
-  background-color: #cce5ff;
+  background-color: #f68c09;
   position: relative;
   border-radius: 6px;
-  padding: 1rem 1.5rem;
 }
-
 .organization .content .tag {
   font-size: 1.3rem;
-  font-weight: 600;
-  color: #003366;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
 }
-
 .organization .content .desc {
-  margin-top: 0.5rem;
-  color: #003366;
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
 }
-
 .organization .content .desc h3 {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
 }
-
 .organization .content .desc p {
   font-size: 1.2rem;
-  line-height: 1.6;
+}
+/* view all button */
+.morebtn {
+  display: flex;
+  justify-content: center;
+}
+.morebtn .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  text-align: center;
+}
+.morebtn .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+}
+.morebtn .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.morebtn .btn:hover {
+  background: #1a047e;
+}
+.morebtn .btn:hover i {
+  transform: translateX(5px);
 }
 
-/* Responsive styling */
+/* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
   .organization {
     min-height: 80vh;
   }
-
   .organization .timeline {
     margin-top: 2rem;
   }
-
   .organization .timeline::after {
     left: 31px;
   }
-
   .organization .container {
     width: 100%;
-    padding-left: 7rem;
+    padding-left: 8rem;
     padding-right: 2rem;
   }
-
   .organization .container::after {
-    left: 15px;
-    right: auto;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
-
   .organization .container::before {
-    left: 60px;
-    right: auto;
+    left: 61px;
+    border: medium solid #f68c09;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #004080 transparent transparent;
+    border-color: transparent #f68c09 transparent transparent;
   }
-
-  .organization .left::after,
+  .organization .left::after {
+    left: 15px;
+  }
   .organization .right::after {
     left: 15px;
   }
-
   .organization .right {
-    left: 0;
+    left: 0%;
   }
-
   .morebtn {
     margin-top: 3rem;
   }
 }
-/* Animasi muncul dari atas */
-.organization .container.animate-from-top {
-  opacity: 0;
-  transform: translateY(-50px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.organization .container.animate-from-top.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.organization .container.animate-from-bottom {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.organization .container.animate-from-bottom.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
+/* organization media queries ends */
 /* organization section ends */
+
+
 
 
 /* achievement section starts */
