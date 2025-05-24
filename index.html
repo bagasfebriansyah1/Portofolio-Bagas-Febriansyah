@@ -538,29 +538,7 @@
     </div>
 
   </div>
-
 </section>
-<!-- organization & volunteer section ends -->
-<script>
-  const containers = document.querySelectorAll('.organization .container');
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const direction = entry.boundingClientRect.top > window.innerHeight / 2 ? 'bottom' : 'top';
-        entry.target.classList.add(`animate-from-${direction}`, 'visible');
-       
-      }
-    });
-  }, {
-    threshold: 0.2
-  });
-
-  containers.forEach(container => {
-    observer.observe(container);
-  });
-</script>
-
 
 <!-- Achievement section starts -->
 <section class="achievement" id="achievement">
