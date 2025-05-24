@@ -1089,6 +1089,30 @@ header .navbar ul li a:hover {
     margin-top: 3rem;
   }
 }
+/* Animasi muncul dari atas */
+.organization .container.animate-from-top {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.organization .container.animate-from-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animasi muncul dari bawah */
+.organization .container.animate-from-bottom {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.organization .container.animate-from-bottom.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* organization section ends */
 
 
