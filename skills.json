@@ -1,7 +1,7 @@
 [
     {
         "name": "Accounting",
-        "icon": "https://img.icons8.com/bubbles/48/000000/accounting.png"
+        "icon": "https://img.icons8.com/bubbles/64/000000/accounting.png"
     },
     {
         "name": "Auditing",
@@ -9,62 +9,62 @@
     },
     {
         "name": "Android",
-        "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
+        "icon": "https://img.icons8.com/fluency/64/000000/android-os.png"
     },
     {
         "name": "Bootstrap",
-        "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+        "icon": "https://img.icons8.com/color/64/000000/bootstrap.png"
     },
     {
         "name": "HTML5",
-        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+        "icon": "https://img.icons8.com/color/64/000000/html-5--v1.png"
     },
     {
         "name": "CSS3",
-        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+        "icon": "https://img.icons8.com/color/64/000000/css3.png"
     },
     {
         "name": "JavaScript",
-        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+        "icon": "https://img.icons8.com/color/64/000000/javascript--v1.png"
     },
     {
         "name": "Java",
-        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+        "icon": "https://img.icons8.com/color/64/000000/java-coffee-cup-logo--v1.png"
     },
     {
         "name": "Kotlin",
-        "icon": "https://img.icons8.com/color/48/000000/kotlin.png"
+        "icon": "https://img.icons8.com/color/64/000000/kotlin.png"
     },
     {
         "name": "PHP",
-        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+        "icon": "https://img.icons8.com/offices/64/000000/php-logo.png"
     },
     {
         "name": "Python",
-        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+        "icon": "https://img.icons8.com/color/64/000000/python--v1.png"
     },
     {
         "name": "C++",
-        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+        "icon": "https://img.icons8.com/color/64/000000/c-plus-plus-logo.png"
     },
     {
         "name": "MySQL",
-        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+        "icon": "https://img.icons8.com/color/64/000000/mysql-logo.png"
     },
     {
         "name": "jQuery",
-        "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
+        "icon": "https://img.icons8.com/ios-filled/64/1169ae/jquery.png"
     },
     {
         "name": "Git VCS",
-        "icon": "https://img.icons8.com/color/48/000000/git.png"
+        "icon": "https://img.icons8.com/color/64/000000/git.png"
     },
     {
         "name": "GitHub",
-        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+        "icon": "https://img.icons8.com/glyph-neue/64/ffffff/github.png"
     },
     {
         "name": "WordPress",
-        "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
+        "icon": "https://img.icons8.com/color/64/000000/wordpress.png"
     }
 ]
