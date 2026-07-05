@@ -1626,3 +1626,417 @@ form .button-area {
   }
 }
 
+/* ===============================
+   PUBLICATIONS & WRITTEN WORKS
+=================================*/
+
+.publication{
+    background:#f8fbff;
+    padding:6rem 9%;
+}
+
+.publication .heading{
+    text-align:center;
+    margin-bottom:1rem;
+}
+
+.publication .subtitle{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 4rem;
+    color:#666;
+    font-size:1.6rem;
+    line-height:1.8;
+}
+
+.publication-container{
+    display:flex;
+    flex-direction:column;
+    gap:3rem;
+}
+
+/* ===============================
+   Publication Card
+=================================*/
+
+.publication-card{
+
+    display:flex;
+    align-items:center;
+    gap:3rem;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(0,0,0,.05);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.06);
+
+    transition:.35s ease;
+
+}
+
+.publication-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.15);
+
+}
+
+/* ===============================
+   Cover Book
+=================================*/
+
+.publication-image{
+
+    width:270px;
+    min-width:270px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:2rem;
+
+    background:#eef5ff;
+
+}
+
+.publication-image img{
+
+    width:180px;
+
+    border-radius:10px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.20);
+
+    transition:.4s;
+
+}
+
+.publication-card:hover .publication-image img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===============================
+   Content
+=================================*/
+
+.publication-content{
+
+    flex:1;
+
+    padding:3rem 3rem 3rem 0;
+
+}
+
+/* ===============================
+   Badge
+=================================*/
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:.6rem;
+
+    padding:.7rem 1.6rem;
+
+    background:#1565c0;
+
+    color:#fff;
+
+    border-radius:50px;
+
+    font-size:1.3rem;
+
+    font-weight:600;
+
+    margin-bottom:1.5rem;
+
+}
+
+.badge.book{
+
+    background:#1565c0;
+
+}
+
+.badge.journal{
+
+    background:#00897b;
+
+}
+
+.badge.article{
+
+    background:#ef6c00;
+
+}
+
+.badge.conference{
+
+    background:#8e24aa;
+
+}
+
+/* ===============================
+   Title
+=================================*/
+
+.publication-content h3{
+
+    font-size:3rem;
+
+    color:#222;
+
+    margin-bottom:1rem;
+
+}
+
+.chapter{
+
+    font-size:1.6rem;
+
+    color:#666;
+
+    margin-bottom:2rem;
+
+}
+
+.chapter strong{
+
+    color:#1565c0;
+
+}
+
+/* ===============================
+   Publication Info
+=================================*/
+
+.publication-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:1.3rem;
+
+    margin-bottom:2.5rem;
+
+}
+
+.publication-info p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.8rem;
+
+    font-size:1.5rem;
+
+    color:#555;
+
+}
+
+.publication-info i{
+
+    color:#1565c0;
+
+    width:20px;
+
+}
+
+/* ===============================
+   Description
+=================================*/
+
+.publication-description{
+
+    color:#666;
+
+    font-size:1.5rem;
+
+    line-height:1.8;
+
+    margin-bottom:2.5rem;
+
+}
+
+/* ===============================
+   Button
+=================================*/
+
+.publication-btn{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:1.5rem;
+
+}
+
+.publication-btn a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.8rem;
+
+    text-decoration:none;
+
+    padding:1.2rem 2.2rem;
+
+    border-radius:8px;
+
+    font-size:1.4rem;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+/* Certificate */
+
+.btn-certificate{
+
+    background:#f9a825;
+
+    color:#fff;
+
+}
+
+.btn-certificate:hover{
+
+    background:#f57f17;
+
+    transform:translateY(-2px);
+
+}
+
+/* Read */
+
+.btn-book{
+
+    background:#1565c0;
+
+    color:#fff;
+
+}
+
+.btn-book:hover{
+
+    background:#0d47a1;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===============================
+   Responsive Tablet
+=================================*/
+
+@media(max-width:991px){
+
+.publication{
+
+    padding:5rem 5%;
+
+}
+
+.publication-card{
+
+    flex-direction:column;
+
+}
+
+.publication-image{
+
+    width:100%;
+
+    min-width:100%;
+
+    padding:3rem;
+
+}
+
+.publication-image img{
+
+    width:220px;
+
+}
+
+.publication-content{
+
+    padding:3rem;
+
+}
+
+.publication-info{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* ===============================
+   Responsive Mobile
+=================================*/
+
+@media(max-width:600px){
+
+.publication .subtitle{
+
+    font-size:1.4rem;
+
+}
+
+.publication-content h3{
+
+    font-size:2.4rem;
+
+}
+
+.publication-info p{
+
+    font-size:1.4rem;
+
+}
+
+.publication-btn{
+
+    flex-direction:column;
+
+}
+
+.publication-btn a{
+
+    width:100%;
+
+}
+
+.publication-image img{
+
+    width:170px;
+
+}
+
+}
